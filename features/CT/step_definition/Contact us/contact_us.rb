@@ -6,14 +6,22 @@ end
 
 Quando("escolher a opcao Customer service") do                               
   select('Customer service', from: @id_contact)
-end                                               
+end  
 
 Quando("preencher os campos de {string}, {string}, {string} e clicar no botao send") do |email, order, mensagem|
   @contact_page.email.set email
   @contact_page.order.set order
   @contact_page.mensagem.set mensagem
+end
+
+Quando("subir a imagem") do 
+  @contact_page.choose.attach_file 'fileUpload', 'C:\Users\Bruno Noberto\Documents\QTS\teste - Git\Scarface\features\minion.jpg',
+end
+
+Quando("clicar em send") do
   @contact_page.sendbtn.click
 end
+
 
 Entao("a mensagem sera enviada") do
   find(:xpath, '//*[@id="center_column"]')

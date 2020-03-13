@@ -14,13 +14,15 @@ Contexto: Estar na pagina contact us
 Esquema do Cenario: Enviar uma mensagem
   Quando escolher a opcao Customer service 
     E preencher os campos de "<email>", "<order>", "<mensagem>" e clicar no botao send
+    E subir a imagem
+    E clicar em send
   Entao a mensagem sera enviada
 
 
 Exemplos:
-  | email                                               | order | mensagem                                                                                                                                                                                                                                                                                                                                                |
-  | teste@qts.com                                       | 1     | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.                                                   |
-  | henryericksales__henryericksales@gruposantin.com.br | 2     | Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.  |
+  | email                                               | order | mensagem|
+  | teste@qts.com                                       | 1     | Lorem   |
+  | henryericksales__henryericksales@gruposantin.com.br | 2     | Donec   |
 
 
 
